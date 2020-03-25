@@ -219,7 +219,6 @@ li {
 .footer {
     grid-column: 1/4;
     color: var(--white);
-    /* padding: 2em 0; */
     background-color: var(--black);
 }
 
