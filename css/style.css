@@ -147,10 +147,10 @@ li {
 .icon-wrapper {
     grid-column: 2;
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
     width: 100%;
     justify-content: center;
     padding-bottom: 6em;
-    grid-template-columns: repeat(8, 1fr);
 }
 
 .card img {
@@ -284,7 +284,6 @@ footer i:hover {
     .flex-container {
         justify-content: center;
         align-items: center;
-
     }
 
     .container-image {
@@ -296,11 +295,41 @@ footer i:hover {
     }
 
     .card img {
-        width: 90px;
+        width: 30px;
     }
 
     .card p {
         font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .flex-container {
+        padding: 0;
+    }
+
+    .container-text {
+        width: 100%;
+    }
+
+    .card img {
+        width: 70%;
+    }
+
+    .card {
+        margin: 0px;
+
+    }
+
+    .flex-container {
+        grid-column: 1/4;
+    }
+
+    .icon-wrapper {
+        grid-column: 1/4;
+
     }
 
 }
